@@ -1,7 +1,7 @@
 let plans = [
-    { plan: 'Basic', price: 250 },
-    { plan: 'Premium', price: 400},
-    { plan: 'Advance', price: 700}
+    { plan: 'Basic', price: 125 },
+    { plan: 'Plus', price: 195},
+    { plan: 'Premium', price: 425}
 ]
 let clients = 0;
 let multiplier = 0;
