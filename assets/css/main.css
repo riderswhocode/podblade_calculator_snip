@@ -163,6 +163,11 @@ button {
     border-color: rgba(17, 17, 17, 0.4);
   }
   
+  #footnote {
+    font-style: italic;
+    font-size: 0.8em;
+  }
+
   .popup_calculator {
     visibility: hidden;
     position: absolute;
