@@ -1,5 +1,6 @@
 <div class="main_container">
     <div class="main_header">
+        <h1 class="header_content">Recurring Income Potential</h1>
     </div>
     <div class="main_content">
         <div class="holder">
@@ -7,12 +8,14 @@
             <input class="pod-noclients" type="number" id="clients" name="number_of_clients" min="1" step="1" placeholder="1">
         </div>
         <div class="holder">
+            <p class="content_label">How much would you mark up<span class="tooltip"> our prices? <img class="tooltiptext" src="assets/podblade_packages.png"> </span></p>
             <div class="range-wrap">
                 <div class="range-value" id="rangeV"></div>
                 <input type="range" id="markup" name="markup_percentage" value="1.5" min="1" max="10" step="0.5" style="width: 100%;">
             </div>
         </div>
         <div class="btn_container" style="margin-top: 50px;">
+            <button class="calc_btn" id="compute" type="button">Estimate My Income</button>
         </div>
     </div>
 </div>
@@ -25,6 +28,7 @@
             <p>Name</p>
             <input type="text" id="fullname" placeholder="Name" required="">
             <p>Email Confirmation</p>
+            <!-- <p class="notif" id="msg">Invalid Email Address</p> -->
             <input type="text" id="email" placeholder="Email Address" required="" inputmode="email">
             <p id="footnote">We promise we wont spam</p>
             <div class="btn_container">
