@@ -30,12 +30,12 @@ input[type=range] {
     }
     .range-wrap{
     position: relative;
-    margin-top: 20px;
+    margin-top: 40px;
     border-style: none;
     }
     .range-value{
     position: absolute;
-    top: -50%;
+    top: -62%;
     }
     .range-value span{
     width: 30px;

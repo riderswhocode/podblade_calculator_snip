@@ -71,9 +71,10 @@ button {
   }
 
   .content_label {
-    font-size: 1.2em;
+    font-size: 18px;
     color: #111111;
-    font-weight: bold;
+    font-weight: 600;
+    margin-bottom: 14px;
   }
 
   .btn_container {
@@ -276,6 +277,11 @@ button {
   
   .notif.active {
     visibility: visible;
+  }
+  .pod-noclients {
+    height: 60px;
+    font-size: 18px;
+    border-radius: 6px;
   }
 
   /* @media (min-width: 1400px) {
