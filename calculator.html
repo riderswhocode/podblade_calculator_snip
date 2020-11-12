@@ -1,0 +1,65 @@
+<div class="main_container">
+    <div class="main_header">
+        <h1 class="header_content">Package Calculator</h1>
+    </div>
+    <div class="main_content">
+        <div class="holder">
+            <p class="content_label">How many clients do you have?</p>
+            <input type="number" id="clients" name="number_of_clients" min="1" step="1" placeholder="Number of clients" style="height: 74px;font-size: 24px;">
+        </div>
+        <div class="holder">
+            <p class="content_label">How much would you mark up our prices?</p>
+            <div class="range-wrap">
+                <div class="range-value" id="rangeV"></div>
+                <input type="range" id="markup" name="markup_percentage" value="1.5" min="1" max="10" step="0.5" style="width: 100%;">
+            </div>
+        </div>
+        <div class="btn_container" style="margin-top: 50px;">
+            <button class="calc_btn" id="compute" type="button">Compute ROI</button>
+        </div>
+    </div>
+</div>
+<div class="popup_container">
+    <div class="popup_email">
+        <div class="popup_email_header">
+            <h5>Estimate Recurring Income</h5>
+        </div>
+        <div class="popup_email_content">
+            <p>Email Confirmation</p>
+            <p class="notif" id="msg">Invalid Email Address</p>
+            <input type="text" id="email" placeholder="Email Address" required="" inputmode="email">
+            <p>We promise we wont spam</p>
+            <div class="btn_container">
+                <button class="calc_btn" id="estimate" type="button">Estimate</button>
+                <button class="close_btn" id="close_compute" type="button" style="margin-top: 10px;">Close</button>
+            </div>
+        </div>
+    </div>
+    <div class="popup_calculator">
+        <div class="popup_calculator_content">
+            <!-- <div class="popup_calculator_header">
+                <p>Estimated Recurring Income</p>
+            </div> -->
+            <!-- <div class="initial_cost">
+                <p>Gross Income: <span id="grossincome">$0.00</span></p>
+                <p>Average Base Plan: <span id="baseplan">$0.00</span></p>
+            </div> -->
+            <div class="est_income">
+                <p>Estimated Monthly Income</p>
+                <p id="estimatedincome">$0.00</p>
+            </div>
+            <div class="btn_container">
+                <button class="calc_btn" id="" type="button">Let's Build my Brand</button>
+                <button class="close_btn" id="close_calculator" type="button">Close</button>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/slider.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/slider.js"></script>
