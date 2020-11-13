@@ -295,13 +295,17 @@ button {
   color: blue;
   cursor: pointer;
  } 
+
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 500px;
   background-color: #ffffff;
-
+  
   position: absolute;
   z-index: 1;
+
+  top: 20%;
+  left: 90%;
 }
 
 .tooltip:hover .tooltiptext {
