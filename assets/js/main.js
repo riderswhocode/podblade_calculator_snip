@@ -63,14 +63,15 @@ $("#close_compute").on("click", function() {
 
 $("#estimate").on("click", function() {
     let email_holder = document.getElementById("email").value
+    let name_holder = document.getElementById("fullname").value
     if (email_holder != "") {
         if (ValidateEmail(email_holder)){
             $(".notif").removeClass("active");
             
             //make the request here!
-            const data = { email: email_holder }
+            const data = { email: email_holder, name: name_holder }
             $.post(Url, data, function(status) {
-                console.log('success')
+                
             })
             // document.getElementById("grossincome").innerHTML = currencyFormat(Gross());
             // document.getElementById("baseplan").innerHTML = currencyFormat(BasePlan());
