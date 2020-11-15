@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     font-family: Poppins, sans-serif;
     border: none;
@@ -11,15 +11,14 @@ button {
 
 .main_container {
     overflow: visible;
-    width: 370px;
-    height: 470px;
+    width: 350px;
+    height: 450px;
     margin: 0 auto;
     padding: 5px;
     top: 0;
   }
 
   .main_header {
-    /* height: 195px; */
     height: 130px;
     background-color: #ff8e01;
     border-top-right-radius: 25px;
@@ -34,8 +33,6 @@ button {
   
   .header_content {
     color: #ffffff;
-    /* font-weight: 700; */
-    /* font-size: 2.5em; */
     font-weight: 600;
     font-size: 2em;
     padding: 15px;
@@ -245,7 +242,7 @@ button {
   font-size: 2.5em;
 }
 
-#estiamte {
+#estimate {
   font-size: 0.5em;
 }
 
@@ -284,19 +281,14 @@ button {
     border-radius: 6px;
   }
 
-  /* @media (min-width: 1400px) {
-    .main_container {
-      width: 522px;
-      height: 750px;
-    }
-  } */
+  
 
 .tooltip {
   color: blue;
   cursor: pointer;
  } 
 
-.tooltip .tooltiptext {
+ .tooltiptext {
   visibility: hidden;
   width: 500px;
   background-color: #ffffff;
@@ -311,3 +303,49 @@ button {
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+
+ @media (min-width: 1400px) {
+    
+  .main_container {
+      width: 522px;
+      height: 750px;
+    }
+
+    .main_header {
+      height: 175px;
+    }
+
+    .header_content {
+      font-size: 3em;
+      letter-spacing: 0px;
+    }
+
+    .content_label {
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 24px;
+    }
+
+    .main_content input#clients {
+      height: 80px;
+      font-size: 32px;
+    }
+
+    .btn_container {
+      margin-top: 50px;
+    }
+
+    .calc_btn {
+      height: 108px;
+      width: 324px;
+      font-size: 24px;
+    }
+
+    .popup_email input {
+      height: 24px;
+    }
+
+    #estimate {
+      font-size: 1.5em;
+    }
+  } 
