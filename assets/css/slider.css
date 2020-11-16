@@ -32,18 +32,18 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   background: #ff8e01;
 }
 
-.range_wrap {
+.pod_calc_range_wrap {
   position: relative;
   margin-top: 40px;
   border-style: none;
 }
 
-.range_value {
+.pod_calc_range_value {
   position: absolute;
   top: -50%;
 }
 
-.range_value span {
+.pod_calc_range_value span {
   width: 30px;
   height: 24px;
   line-height: 24px;
@@ -58,7 +58,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   border-radius: 6px;
 }
 
-.range_value span:before {
+.pod_calc_range_value span:before {
   content: "";
   position: absolute;
   width: 0;

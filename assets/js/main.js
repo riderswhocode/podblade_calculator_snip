@@ -1,4 +1,4 @@
-let plans = [
+let pod_plans = [
     { plan: 'Basic', price: 125 },
     { plan: 'Plus', price: 195},
     { plan: 'Premium', price: 425}
@@ -10,10 +10,10 @@ const Url = 'https://hook.integromat.com/ipj8a7lpcjaf3kscolewtbmrm7q9xp4g'
 
 
 function PlanAverage(){
-    let sum = plans.reduce((currentTotal, plan) => {
+    let sum = pod_plans.reduce((currentTotal, plan) => {
         return plan.price + currentTotal
     }, 0)
-    return sum / plans.length
+    return sum / pod_plans.length
 }
 
 function Gross() {
@@ -44,26 +44,26 @@ function currencyFormat(num) {
 }
 
 function getInput(){
-    clients = document.getElementById("clients").value;
-    multiplier = document.getElementById("markup").value;
+    clients = document.getElementById("pod_calc_clients").value;
+    multiplier = document.getElementById("pod_calc_markup").value;
 
-    $(".popup_container").addClass("active");
-    $(".popup_email").addClass("active");    
+    $(".pod_calc_popup_container").addClass("active");
+    $(".pod_calc_popup_email").addClass("active");    
 }
 
-$("#compute").on("click", function() {
+$("#pod_calc_compute").on("click", function() {
     getInput();
 })
 
-$("#close_compute").on("click", function() {
-    $(".popup_email").removeClass("active");
-    $(".popup_container").removeClass("active");
+$("#pod_calc_close_compute").on("click", function() {
+    $(".pod_calc_popup_email").removeClass("active");
+    $(".pod_calc_popup_container").removeClass("active");
     $(".notif").removeClass("active");
 });
 
-$("#estimate").on("click", function() {
-    let email_holder = document.getElementById("email").value
-    let name_holder = document.getElementById("fullname").value
+$("#pod_calc_estimate").on("click", function() {
+    let email_holder = document.getElementById("pod_calc_email").value
+    let name_holder = document.getElementById("pod_calc_fullname").value
     if (email_holder != "") {
         if (ValidateEmail(email_holder)){
             $(".notif").removeClass("active");
@@ -75,10 +75,10 @@ $("#estimate").on("click", function() {
             })
             // document.getElementById("grossincome").innerHTML = currencyFormat(Gross());
             // document.getElementById("baseplan").innerHTML = currencyFormat(BasePlan());
-            document.getElementById("estimatedincome").innerHTML = currencyFormat(NetIncome());
+            document.getElementById("pod_calc_estimatedincome").innerHTML = currencyFormat(NetIncome());
 
-            $(".popup_calculator").addClass("active");
-            $(".popup_email").removeClass("active");
+            $(".pod_calc_popup_calculator").addClass("active");
+            $(".pod_calc_popup_email").removeClass("active");
         }
         else {
             document.getElementById("msg").innerHTML = "Invalid email address"
@@ -91,7 +91,7 @@ $("#estimate").on("click", function() {
     }
 })
 
-$("#close_calculator").on("click", function() {
-    $(".popup_calculator").removeClass("active");
-    $(".popup_container").removeClass("active");
+$("#pod_calc_close_calculator").on("click", function() {
+    $(".pod_calc_popup_calculator").removeClass("active");
+    $(".pod_calc_popup_container").removeClass("active");
 });

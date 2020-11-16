@@ -1,6 +1,6 @@
 
 @media (min-width: 992px) {
-  .main_container {
+  .pod_calc_main_container {
     overflow: visible;
     width: 350px;
     margin: 0 auto;
@@ -9,7 +9,7 @@
   }
 }
 
-.main_header {
+.pod_calc_main_header {
   height: 130px;
   background-color: #ff8e01;
   border-top-right-radius: 25px;
@@ -19,7 +19,7 @@
   align-items: center;
 }
 
-.header_content {
+.pod_calc_header_content {
   color: #fff;
   font-weight: 600;
   font-size: 2em;
@@ -27,7 +27,7 @@
   letter-spacing: 2px;
 }
 
-.main_content {
+.pod_calc_main_content {
   text-align: left;
   display: block;
   position: relative;
@@ -40,11 +40,11 @@
   border-bottom-right-radius: 15px;
 }
 
-.main_content .holder {
+.pod_calc_main_content .pod_calc_holder {
   margin-top: 25px;
 }
 
-.main_content input#clients {
+.pod_calc_main_content input#pod_calc_clients {
   width: 80%;
   height: 60px;
   font-size: 18px;
@@ -55,14 +55,14 @@
   border-radius: 6px;
 }
 
-.content_label {
+.pod_calc_content_label {
   font-size: 18px;
   color: #111;
   font-weight: 600;
   margin-bottom: 14px;
 }
 
-.btn_container {
+.pod_calc_btn_container {
   width: 100%;
   display: block;
   position: relative;
@@ -70,7 +70,7 @@
   text-align: center;
 }
 
-.calc_btn {
+.pod_calc_calc_btn {
   width: 80%;
   height: 82px;
   vertical-align: middle;
@@ -84,7 +84,7 @@
   text-align: center;
 }
 
-.close_btn {
+.pod_calc_close_btn {
   width: 60%;
   border-style: none;
   vertical-align: middle;
@@ -96,7 +96,7 @@
   background-color: transparent;
 }
 
-.popup_container {
+.pod_calc_popup_container {
   visibility: hidden;
   position: absolute;
   width: 100%;
@@ -105,7 +105,7 @@
   background-color: rgba(0, 0, 0, 0.25);
 }
 
-.popup_email {
+.pod_calc_popup_email {
   visibility: hidden;
   position: absolute;
   display: block;
@@ -120,7 +120,7 @@
   border-bottom-right-radius: 25px;
 }
 
-.popup_email_header {
+.pod_calc_popup_email_header {
   height: 35px;
   background-color: #ff8e01;
   border-top-left-radius: 15px;
@@ -131,14 +131,14 @@
   color: #fff;
 }
 
-.popup_email_content {
+.pod_calc_popup_email_content {
   position: relative;
   display: block;
   background-color: #fff;
   padding: 5px 15px 0px 15px;
 }
 
-.popup_email input {
+.pod_calc_popup_email input {
   width: 90%;
   height: 54px;
   padding: 15px 10px;
@@ -146,12 +146,12 @@
   border-color: rgba(17, 17, 17, 0.4);
 }
 
-#footnote {
+#pod_calc_footnote {
   font-style: italic;
   font-size: 0.8em;
 }
 
-.popup_calculator {
+.pod_calc_popup_calculator {
   visibility: hidden;
   position: relative;
   display: block;
@@ -165,14 +165,14 @@
   /* height: 320px; */
 }
 
-.popup_calculator_content {
+.pod_calc_popup_calculator_content {
   position: relative;
   display: block;
   background: #fff;
   border-radius: 15px;
 }
 
-.est_income {
+.pod_calc_est_income {
   margin: auto;
   background-color: #f59b2d;
   height: 35%;
@@ -182,7 +182,7 @@
   border-top-right-radius: 15px;
 }
 
-.est_income p {
+.pod_calc_est_income p {
   /* padding: 10px; */
   color: #fff;
   font-weight: 200;
@@ -190,25 +190,25 @@
   text-align: center;
 }
 
-#estimatedincome {
+#pod_calc_estimatedincome {
   font-weight: 800;
   font-size: 2.5em;
 }
 
-.popup_container.active {
+.pod_calc_popup_container.active {
   visibility: visible;
 }
 
-.popup_email.active {
+.pod_calc_popup_email.active {
   visibility: visible;
 }
 
-.popup_calculator {
+.pod_calc_popup_calculator {
   visibility: hidden;
   position: relative;
 }
 
-.popup_calculator.active {
+.pod_calc_popup_calculator.active {
   visibility: visible;
 }
 
@@ -217,12 +217,13 @@
   font-size: 18px;
 }
 
-.tooltip {
+.pod_calc_price_hover {
   color: blue;
   cursor: pointer;
+  display: block;
 }
 
-.tooltiptext {
+/* .tooltiptext {
   visibility: hidden;
   width: 500px;
   background-color: #fff;
@@ -230,9 +231,18 @@
   z-index: 1;
   top: 20%;
   left: 90%;
+} */
+
+.pod_calc_price_hover:hover {
+  position: relative;
 }
 
-.tooltip:hover .tooltiptext {
-  visibility: visible;
+.pod_calc_price_hover:hover:after {
+  content: url(../podblade_packages.png);
+  width: 350px;
+  height: 200px;
+  display: block;
+  position: absolute;
+  top: 0rem;
 }
 
