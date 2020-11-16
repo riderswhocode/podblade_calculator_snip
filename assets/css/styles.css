@@ -243,6 +243,6 @@
   height: 200px;
   display: block;
   position: absolute;
-  top: 0rem;
+  z-index: 1;
 }
 
