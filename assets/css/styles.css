@@ -1,0 +1,238 @@
+
+@media (min-width: 992px) {
+  .main_container {
+    overflow: visible;
+    width: 350px;
+    margin: 0 auto;
+    padding: 5px;
+    top: 0;
+  }
+}
+
+.main_header {
+  height: 130px;
+  background-color: #ff8e01;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+}
+
+.header_content {
+  color: #fff;
+  font-weight: 600;
+  font-size: 2em;
+  padding: 15px;
+  letter-spacing: 2px;
+}
+
+.main_content {
+  text-align: left;
+  display: block;
+  position: relative;
+  padding: 15px;
+  border-left: 2px solid;
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+  border-color: rgba(0, 0, 0, 0.3);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.main_content .holder {
+  margin-top: 25px;
+}
+
+.main_content input#clients {
+  width: 80%;
+  height: 60px;
+  font-size: 18px;
+  padding: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(17, 17, 17, 0.4);
+  border-radius: 6px;
+}
+
+.content_label {
+  font-size: 18px;
+  color: #111;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.btn_container {
+  width: 100%;
+  display: block;
+  position: relative;
+  margin-top: 35px;
+  text-align: center;
+}
+
+.calc_btn {
+  width: 80%;
+  height: 82px;
+  vertical-align: middle;
+  background-color: #fff;
+  border-radius: 10px;
+  color: #ff8e01;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #ff8e01;
+  font-size: 24px;
+  text-align: center;
+}
+
+.close_btn {
+  width: 60%;
+  border-style: none;
+  vertical-align: middle;
+  text-align: center;
+  color: rgb(80, 78, 78);
+  font-weight: 400;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: transparent;
+}
+
+.popup_container {
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.popup_email {
+  visibility: hidden;
+  position: absolute;
+  display: block;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  width: 325px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.popup_email_header {
+  height: 35px;
+  background-color: #ff8e01;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.popup_email_content {
+  position: relative;
+  display: block;
+  background-color: #fff;
+  padding: 5px 15px 0px 15px;
+}
+
+.popup_email input {
+  width: 90%;
+  height: 54px;
+  padding: 15px 10px;
+  border-style: solid;
+  border-color: rgba(17, 17, 17, 0.4);
+}
+
+#footnote {
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+.popup_calculator {
+  visibility: hidden;
+  position: relative;
+  display: block;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 325px;
+  /* height: 320px; */
+}
+
+.popup_calculator_content {
+  position: relative;
+  display: block;
+  background: #fff;
+  border-radius: 15px;
+}
+
+.est_income {
+  margin: auto;
+  background-color: #f59b2d;
+  height: 35%;
+  display: block;
+  align-items: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.est_income p {
+  /* padding: 10px; */
+  color: #fff;
+  font-weight: 200;
+  display: block;
+  text-align: center;
+}
+
+#estimatedincome {
+  font-weight: 800;
+  font-size: 2.5em;
+}
+
+.popup_container.active {
+  visibility: visible;
+}
+
+.popup_email.active {
+  visibility: visible;
+}
+
+.popup_calculator {
+  visibility: hidden;
+  position: relative;
+}
+
+.popup_calculator.active {
+  visibility: visible;
+}
+
+.pod_noclients {
+  height: 60px;
+  font-size: 18px;
+}
+
+.tooltip {
+  color: blue;
+  cursor: pointer;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 500px;
+  background-color: #fff;
+  position: absolute;
+  z-index: 1;
+  top: 20%;
+  left: 90%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+

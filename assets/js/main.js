@@ -95,4 +95,3 @@ $("#close_calculator").on("click", function() {
     $(".popup_calculator").removeClass("active");
     $(".popup_container").removeClass("active");
 });
-

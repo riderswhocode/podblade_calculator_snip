@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/slider.css">
+</head>
+
+<body>
+    <div class="main_container">
+        <div class="main_header">
+            <h1 class="header_content">Recurring Income Potential</h1>
+        </div>
+        <div class="main_content">
+            <div class="holder">
+                <p class="content_label">How many clients do you have?</p><input type="number" id="clients" class="pod_noclients" name="number_of_clients" min="1" step="1" placeholder="1"></div>
+            <div class="holder">
+                <p class="content_label">How much would you mark up&nbsp;<span class="tooltip">our prices?</span></p>
+                <div class="range_wrap">
+                    <div id="rangeV" class="range_value"></div>
+                    <input type="range" id="markup" name="markup_percentage" value="1.5" min="1" max="10" step="0.5">
+                </div>
+            </div>
+            <div class="btn_container"><button class="btn calc_btn" id="compute" type="button">Estimate My Income</button></div>
+        </div>
+    </div>
+    <div class="popup_container">
+        <div class="popup_email">
+            <div class="popup_email_header">
+                <h5>Estimate Recurring Income</h5>
+            </div>
+            <div class="popup_email_content">
+                
+                    <p>Name</p>
+                    <input type="text" id="fullname" placeholder="Name" required="">
+                
+                
+                    <p>Email Confirmation</p>
+                    <input type="text" id="email" placeholder="Name" required="" inputmode="email">
+                
+                <p id="footnote">We promise we wont spam</p>
+                <div class="btn_container">
+                    <button class="btn calc_btn" id="estimate" type="button">Estimate</button>
+                    <button class="btn close_btn" id="close_compute" type="button">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup_calculator">
+            <div class="popup_calculator_content">
+                <div class="est_income">
+                    <p>Estimated Monthly Income</p>
+                    <p id="estimatedincome">$0.00</p>
+                </div>
+                <div class="btn_container">
+                    <form>
+                        <button class="btn calc_btn" type="submit" formaction="https://podblade.com/booking">Let's Build my Brand</button>
+                        <button class="btn close_btn" id="close_calculator" type="button">Close</button>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/slider.js"></script>
+</body>
+
+</html>
