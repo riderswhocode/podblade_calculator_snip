@@ -6,7 +6,7 @@ let pod_plans = [
 let clients = 0;
 let multiplier = 0;
 
-const Url = 'https://hook.integromat.com/ipj8a7lpcjaf3kscolewtbmrm7q9xp4g'
+const Url = ''
 
 
 function PlanAverage(){
